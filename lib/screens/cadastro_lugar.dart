@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:guia_turismo/controller/camera_controller.dart';
 import 'package:guia_turismo/controller/lugares_controller.dart';
 import 'package:guia_turismo/models/lugares_model.dart';
+import 'package:guia_turismo/screens/mapa_screen.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:provider/provider.dart';
 
 class CadastroLugar extends StatefulWidget {
@@ -111,8 +113,36 @@ class _CadastroLugarState extends State<CadastroLugar> {
                 controller: _longitudeController,
                 decoration: const InputDecoration(labelText: "Longitude"),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 20),
+              
+              ElevatedButton(
+            onPressed: () async {
+           
+            final LatLng? coordenadaSelecionada = await Navigator.push(
+              context,
+              MaterialPageRoute(
+              builder: (context) => const MapaScreen(),
+          ),
+        );
 
+    
+    if (coordenadaSelecionada != null) {
+      setState(() {
+        _latitudeController.text = coordenadaSelecionada.latitude.toString();
+        _longitudeController.text = coordenadaSelecionada.longitude.toString();
+      });
+    }
+  },
+  child: const Row(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      Icon(Icons.map_rounded),
+      SizedBox(width: 8),
+      Text("Buscar por endereço"),
+    ],
+  ),
+),
+              const SizedBox(height: 20),
               // Botão Salvar
               ElevatedButton(
                 onPressed: () => _salvarDados(context),

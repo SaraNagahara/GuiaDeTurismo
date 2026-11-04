@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:guia_turismo/controller/theme_controller.dart';
 import 'package:guia_turismo/screens/cadastro_lugar.dart';
 import 'package:guia_turismo/screens/lugares_screen.dart';
+import 'package:guia_turismo/screens/camera_screen.dart';
+import 'package:guia_turismo/screens/mapa_screen.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,14 +17,16 @@ class _HomeScreenState extends State<HomeScreen> {
   //Geram links e titulo para os botões do bottomNavigationBar
   final List<Widget> _paginas = [
     Center(child: Text("")),
-    CadastroLugar(),
+    CameraScreen(),
     LugaresScreen(),
+    MapaScreen()
   ];
 
   final List<String> _cabecalho = [
     'Guia Turismo',
     'Tirar foto',
-    'Lugares Para visitar'
+    'Lugares Para visitar',
+     'GPS'
   ];
 
   @override
@@ -47,12 +51,13 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: _paginaAtual,
         showSelectedLabels: true,
         showUnselectedLabels: true,
-        backgroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(255, 243, 228, 228),
         onTap: (index) => setState(() => _paginaAtual = index),
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Inicio'),
           BottomNavigationBarItem(icon: Icon(Icons.camera), label: 'Camera'),
-          BottomNavigationBarItem(icon: Icon(Icons.place), label: 'Locais')
+          BottomNavigationBarItem(icon: Icon(Icons.place), label: 'Locais'),
+          BottomNavigationBarItem(icon: Icon(Icons.gps_fixed), label: 'GPS')
         ]
         
         ),

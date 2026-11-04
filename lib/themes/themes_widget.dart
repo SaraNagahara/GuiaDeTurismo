@@ -1,3 +1,5 @@
+// ignore_for_file: strict_top_level_inference
+
 import 'package:flutter/material.dart';
 
 AppBarTheme defineAppBar(cor) {
@@ -14,6 +16,7 @@ BottomNavigationBarThemeData defineNavegacaoBase(cor) {
     backgroundColor: Colors.pink,
     elevation: 4,
     selectedItemColor: Colors.pink,
+    unselectedItemColor: Colors.black54
   );
 }
 
