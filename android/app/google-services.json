@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "702983113637",
+    "project_id": "login-6d680",
+    "storage_bucket": "login-6d680.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702983113637:android:a6c1af58d21dc4b21e364c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_architecture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702983113637-0b8d81lm895m6e3hiepe1edu4vf6rhlk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_architecture",
+            "certificate_hash": "f8ef7ed65672d16c32b64bf40c8b2535ba037775"
+          }
+        },
+        {
+          "client_id": "702983113637-to2hde4pqg1b9khc84iq4n5mcif41gc2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_architecture",
+            "certificate_hash": "1fcfe203dbe2ae5ba0d3c65cefa562acf80f19c3"
+          }
+        },
+        {
+          "client_id": "702983113637-m3u7ptr0rkaaodkj2gp3iln602m4mmdh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS-fYqUAiVz4GikcmEYZWrJ_5-RM64hao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702983113637-m3u7ptr0rkaaodkj2gp3iln602m4mmdh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "702983113637-khrk660idesbsltq4rk2hp6q1isnrem6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.exemplo.guiadeturismo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702983113637:android:9db10e8f5f8a99611e364c",
+        "android_client_info": {
+          "package_name": "com.example.logingoogle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702983113637-0op0a8g37pbqijhaar5d6tg9n85qhce3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.logingoogle",
+            "certificate_hash": "1fcfe203dbe2ae5ba0d3c65cefa562acf80f19c3"
+          }
+        },
+        {
+          "client_id": "702983113637-m3u7ptr0rkaaodkj2gp3iln602m4mmdh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS-fYqUAiVz4GikcmEYZWrJ_5-RM64hao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702983113637-m3u7ptr0rkaaodkj2gp3iln602m4mmdh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "702983113637-khrk660idesbsltq4rk2hp6q1isnrem6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.exemplo.guiadeturismo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
