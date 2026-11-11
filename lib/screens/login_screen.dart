@@ -39,6 +39,13 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (!mounted) return;
       setState(() => _usuario = resultado.user);
+
+      //manda pra home após o login
+      if (resultado.user != null && context.mounted) {
+        Navigator.pushReplacementNamed(context, 'home');
+      }
+
+
     } catch (e) {
       debugPrint('Erro ao autenticar: $e');
     }
